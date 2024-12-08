@@ -13,10 +13,11 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
+![WhatsApp Image 2024-12-08 at 19 50 52_1dbdabd4](https://github.com/user-attachments/assets/5b0e7b59-af77-4445-8057-db25e727cacf)
 
-**Theory**
 
-**Logic Diagram**
+
+
 
 **Procedure**
 
@@ -31,20 +32,28 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**Program:**<br>
+module ex2(a,b,c,d,f1,w,x,y,z,f2);<br>
+input a,b,c,d,w,x,y,z;<br>
+output f1,f2;<br>
+assign f1=((~b&~c)|(~a&b&d)|(a&b&~c));<br>
+assign f2=((~y&z)|(x&y)|(w&y));<br>
+endmodule
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by:Lokesh M <br>RegisterNumber:*/24900227
 
-
-**RTL realization**
 
 **Output:**
 
-**RTL**
+**RTL**<br>
+![Screenshot 2024-12-08 194353](https://github.com/user-attachments/assets/b8ecd81a-e538-4bf8-8e60-450f899c508f)
+
 
 **Timing Diagram**
+![Screenshot 2024-12-08 194251](https://github.com/user-attachments/assets/e64a8f86-7f67-4553-ad18-6512c4577001)
+
 
 **Result:**
 
